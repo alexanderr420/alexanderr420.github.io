@@ -1,0 +1,85 @@
+* {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif !important;
+}
+
+h1 {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #005883;
+}
+
+h3 {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+p {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+#divLecturas,
+#divMultimedia,
+#divActividades,
+#divAutores {
+    display: none;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: #005883 2px solid;
+    margin-bottom: 50px;
+}
+
+.footer {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#divInicio,
+#divLecturas,
+#divMultimedia,
+#divActividades,
+#divAutores {
+    margin-top: 50px;
+}
+
+.imagen {
+    text-align: center;
+    align-items: center;
+}
