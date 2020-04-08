@@ -1,56 +1,55 @@
 $(document).ready(function() {
+    var contador = '';
+    $.get('contador.txt', function(data) {
+        contador = data;
+    });
     //Clic inicio
     $("#inicio").click(function() {
+        $(".contenido").hide();
         $("#divInicio").show();
-        $("#divLecturas").hide();
-        $("#divMultimedia").hide();
-        $("#divActividades").hide();
-        $("#divAutores").hide();
 
+        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
         $("#inicio").removeClass("nav-link").addClass("nav-link active");
+
     });
 
     //Clic lecturas
     $("#lecturas").click(function() {
-        $("#divInicio").hide();
+        $(".contenido").hide();
         $("#divLecturas").show();
-        $("#divMultimedia").hide();
-        $("#divActividades").hide();
-        $("#divAutores").hide();
 
+        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
         $("#lecturas").removeClass("nav-link").addClass("nav-link active");
+
     });
 
     //Clic multimedia
     $("#multimedia").click(function() {
-        $("#divInicio").hide();
-        $("#divLecturas").hide();
+        $(".contenido").hide();
         $("#divMultimedia").show();
-        $("#divActividades").hide();
-        $("#divAutores").hide();
 
+        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
         $("#multimedia").removeClass("nav-link").addClass("nav-link active");
+
     });
 
     //Clic actividades
     $("#actividades").click(function() {
-        $("#divInicio").hide();
-        $("#divLecturas").hide();
-        $("#divMultimedia").hide();
+        $(".contenido").hide();
         $("#divActividades").show();
-        $("#divAutores").hide();
 
+        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
         $("#actividades").removeClass("nav-link").addClass("nav-link active");
+
     });
 
     //Clic autores
     $("#autores").click(function() {
-        $("#divInicio").hide();
-        $("#divLecturas").hide();
-        $("#divMultimedia").hide();
-        $("#divActividades").hide();
+        $(".contenido").hide();
         $("#divAutores").show();
 
+        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
         $("#autores").removeClass("nav-link").addClass("nav-link active");
+
     });
 });

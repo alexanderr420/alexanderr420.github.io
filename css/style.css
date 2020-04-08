@@ -83,3 +83,14 @@ footer {
     text-align: center;
     align-items: center;
 }
+
+.timeline {
+    max-height: 500px !important;
+    overflow-y: auto;
+}
+
+.multimedia {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
