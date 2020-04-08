@@ -64,8 +64,10 @@ footer {
 }
 
 .footer {
+    margin-top: 30px;
     max-height: 200px;
     overflow-y: auto;
+    text-align: center;
 }
 
 .contenido {
@@ -78,7 +80,7 @@ footer {
 }
 
 .timeline {
-    max-height: 500px !important;
+    max-height: 800px !important;
     overflow-y: auto;
 }
 
@@ -94,4 +96,8 @@ footer {
 
 #divInicio {
     display: block;
+}
+
+.fin {
+    text-align: right;
 }
