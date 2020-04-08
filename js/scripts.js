@@ -24,10 +24,20 @@ $(document).ready(function() {
 
     });
 
-    //Clic multimedia
-    $("#multimedia").click(function() {
+    //Clic multimediaGit
+    $("#multimediaGit").click(function() {
         $(".contenido").hide();
-        $("#divMultimedia").show();
+        $("#divMultimediaGit").show();
+
+        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#multimedia").removeClass("nav-link").addClass("nav-link active");
+
+    });
+
+    //Clic multimediaApoyo
+    $("#multimediaApoyo").click(function() {
+        $(".contenido").hide();
+        $("#divMultimediaApoyo").show();
 
         $(".nav-link").removeClass("nav-link active").addClass("nav-link");
         $("#multimedia").removeClass("nav-link").addClass("nav-link active");
