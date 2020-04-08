@@ -24,7 +24,7 @@
         <div class="container">
             <img src="imagen/ECBTI-1.png" class="img-fluid" alt="Responsive image">
             <h1>Bienvenidos al mundo del diseño Web</h1>
-            <ul class="nav nav-tabs nav-fill">
+            <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link active" id="inicio">Inicio</a>
                 </li>
@@ -97,6 +97,28 @@
                 <!---------------------  Lecturas  -------------------------->
                 <div class="container-fluid contenido" id="divLecturas">
                     <h1>Lecturas</h1>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            Lectura 1
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            Lectura 2
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            Lectura 3
+                        </div>
+                    </div>
                 </div>
                 <!---------------------  Multimedia -------------------------->
                 <div class="container-fluid contenido" id="divMultimediaGit">
@@ -149,6 +171,18 @@
                 </div>
                 <div class="container-fluid contenido" id="divAutores">
                     <h1>Autores</h1>
+                    <div class="row">
+                        <div class="col-sm-8 imagen">
+                            <br><br><br><br>
+                            <h4>Yilber Alexander Rodriguez Gil</h4>
+                            <h4>alexanderr420@gmail.com</h4>
+                            <h4>Skype: 313 279 7316</h4>
+                            <h4>DISEÑOS DE SITIOS WEB - (301122A_761)</h4>
+                        </div>
+                        <div class="col-sm-4 imagen">
+                            <img src="imagen/autor1.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-2 timeline">
