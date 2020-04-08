@@ -49,14 +49,11 @@ pre {
     line-height: 18.5714px;
 }
 
-#divLecturas,
-#divMultimedia,
-#divActividades,
-#divAutores {
+.contenido {
     display: none;
 }
 
-.nav-link {
+a {
     cursor: pointer;
 }
 
@@ -71,12 +68,8 @@ footer {
     overflow-y: auto;
 }
 
-#divInicio,
-#divLecturas,
-#divMultimedia,
-#divActividades,
-#divAutores {
-    margin-top: 50px;
+.contenido {
+    margin-top: 30px;
 }
 
 .imagen {
@@ -97,4 +90,8 @@ footer {
 
 .texto {
     margin-top: 15px;
+}
+
+#divInicio {
+    display: block;
 }

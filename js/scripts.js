@@ -1,10 +1,11 @@
 $(document).ready(function() {
     var contador = '';
-    $.get('contador.txt', function(data) {
-        contador = parseFloat(data);
-    });
-    contador = contador + 1;
+    //$.get('contador.txt', function(data) {
+    //    contador = parseFloat(data);
+    //});
+    //contador = contador + 1;
     //Clic inicio
+
     $("#inicio").click(function() {
         $(".contenido").hide();
         $("#divInicio").show();
