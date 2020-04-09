@@ -24,7 +24,7 @@ h3 {
 
 p {
     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    font-size: 14px;
+    /*font-size: 14px;*/
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -87,6 +87,7 @@ footer {
 .timeline {
     max-height: 800px !important;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 0px !important;
 }
 
@@ -115,4 +116,42 @@ footer {
 b,
 h5 {
     color: #005883;
+}
+
+.panel-body {
+    margin-top: 30px !important;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-size: 1em !important;
+}
+
+.code {
+    background-color: #005883;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+
+code {
+    color: #ffffff !important;
+}
+
+code b {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-size: 1em !important;
+    color: #F47920 !important;
+}
+
+code em {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-size: 1em !important;
+    color: #F0B429 !important;
+}
+
+.comentario {
+    color: #B3B3B3 !important;
 }

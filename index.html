@@ -105,13 +105,13 @@
                             <a class="nav-link" id="lectura2-tab" data-toggle="tab" href="#lectura2" role="tab" aria-controls="lectura2" aria-selected="false">Git y GitHub</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="lectura3-tab" data-toggle="tab" href="#lectura3" role="tab" aria-controls="lectura3" aria-selected="false">Lectura 3</a>
+                            <a class="nav-link" id="lectura3-tab" data-toggle="tab" href="#lectura3" role="tab" aria-controls="lectura3" aria-selected="false">HTML5</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="lectura4-tab" data-toggle="tab" href="#lectura4" role="tab" aria-controls="lectura4" aria-selected="false">Lectura 4</a>
+                            <a class="nav-link" id="lectura4-tab" data-toggle="tab" href="#lectura4" role="tab" aria-controls="lectura4" aria-selected="false">CSS3</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="lectura5-tab" data-toggle="tab" href="#lectura5" role="tab" aria-controls="lectura5" aria-selected="false">Lectura 5</a>
+                            <a class="nav-link" id="lectura5-tab" data-toggle="tab" href="#lectura5" role="tab" aria-controls="lectura5" aria-selected="false">Bootstrap</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -274,16 +274,568 @@
                                 Redator Rock Content (2019-2020). Aprende qué es el diseño web y lo que hace un profesional de esta área. Rockcontent. Recuperado de https://rockcontent.com/es/blog/diseno-web/
                             </p>
                         </div>
-                        <!---------------------  Lectura 1 Git y Git  -------------------------->
+                        <!---------------------  Lectura 2 Git y Git  -------------------------->
                         <div class="tab-pane tabLectura fade" id="lectura2" role="tabpanel" aria-labelledby="lectura2-tab">
-                            Lectura 2
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>¿Qué es el control de versiones?</h4>
+                                    <p>
+                                        Los sistemas de control de versiones son programas que tienen como objetivo controlar los cambios en el desarrollo de cualquier tipo de software, permitiendo conocer el estado actual de un proyecto, los cambios que se le han realizado a cualquiera de
+                                        sus piezas, las personas que intervinieron en ellos, etc.
+                                    </p>
+                                    <p>
+                                        Este artículo sirve como introducción a este tipo de herramientas de manera global, pero también para conocer uno de los sistemas de control de versiones existentes en la actualidad que se ha popularizado tremendamente, gracias al sitio Github. Se trata
+                                        de Git, el sistema de control de versiones más conocido y usado actualmente, que es el motor de Github. Al terminar su lectura entenderás qué es Git y qué es Github, dos cosas distintas que a veces resultan confusas
+                                        de entender por las personas que están dando sus primeros pasos en el mundo del desarrollo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Necesidad de un control de versiones </h4>
+                                    <p>
+                                        El control de versiones es una de las tareas fundamentales para la administración de un proyecto de desarrollo de software en general. Surge de la necesidad de mantener y llevar control del código que vamos programando, conservando sus distintos estados.
+                                        Es absolutamente necesario para el trabajo en equipo, pero resulta útil incluso a desarrolladores independientes.
+                                    </p>
+                                    <p>
+                                        Aunque trabajemos solos, sabemos más o menos cómo surge la necesidad de gestionar los cambio entre distintas versiones de un mismo código. Prueba de ello es que todos los programadores, más tarde o más temprano, se han visto en la necesidad de tener dos
+                                        o más copias de un mismo archivo, para no perder su estado anterior cuando vamos a introducir diversos cambios. Para ir solucionando nuestro día a día habremos copiado un fichero, agregándole la fecha o un sufijo
+                                        como "antiguo". Aunque quizás esta acción nos sirva para salir del paso, no es lo más cómodo ni mucho menos lo más práctico.
+                                    </p>
+                                    <p>
+                                        En cuanto a equipos de trabajo se refiere, todavía se hace más necesario disponer de un control de versiones. Seguro que la mayoría hemos experimentado las limitaciones y problemas en el flujo de trabajo cuando no se dispone de una herramienta como Git:
+                                        machacar los cambios en archivos hechos por otros componentes del equipo, incapacidad de comparar de manera rápida dos códigos, para saber los cambios que se introdujeron al pasar de uno a otro, etc.
+                                    </p>
+                                    <p>
+                                        Además, en todo proyecto surge la necesidad de trabajar en distintas ramas al mismo tiempo, introduciendo cambios a los programas, tanto en la rama de desarrollo como la que tenemos en producción. Teóricamente, las nuevas funcionalidades de tu aplicación
+                                        las programarás dentro de la rama de desarrollo, pero constantemente tienes que estar resolviendo bugs, tanto en la rama de producción como en la de desarrollo.
+                                    </p>
+                                    <p>
+                                        Para facilitarnos la vida existen sistemas como Git, Subversion, CVS, etc. que sirven para controlar las versiones de un software y que deberían ser una obligatoriedad en cualquier desarrollo. Nos ayudan en muchos ámbitos fundamentales, como podrían ser:
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Comparar el código de un archivo, de modo que podamos ver las diferencias entre versiones
+                                            </li>
+                                            <li>
+                                                Restaurar versiones antiguas
+                                            </li>
+                                            <li>
+                                                Fusionar cambios entre distintas versiones
+                                            </li>
+                                            <li>
+                                                Trabajar con distintas ramas de un proyecto, por ejemplo la de producción y desarrollo
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        En definitiva, con estos sistemas podemos crear y mantener repositorios de software que conservan todos los estados por el que va pasando la aplicación a lo largo del desarrollo del proyecto. Almacenan también las personas que enviaron los cambios, las
+                                        ramas de desarrollo que fueron actualizadas o fusionadas, etc. Todo este mundo de utilidades para llevar el control del software resulta complejo en un principio, pero veremos que, a pesar de la complejidad, con
+                                        Git podremos manejar los procesos de una manera bastante simple.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Alternativas y variantes de sistemas de control de versiones </h4>
+                                    <p>
+                                        Comenzaron a aparecer los sistemas de control del versionado del software allá por los años setenta, aunque al principio eran bastante elementales. Para hacerse una idea, en los primeros sistemas existía una restricción por la que sólo una persona podía
+                                        estar a la vez tocando el mismo código. Es posible imaginarse que cosas semejantes provocaban retraso en los equipos de trabajo, por ello, a lo largo de los años fueron surgiendo nuevos sistemas de control de versiones,
+                                        siempre evolucionando con el objetivo de resolver las necesidades de los equipos de desarrollo.
+                                    </p>
+                                    <p>
+                                        Tenemos principalmente dos tipos de variantes:
+                                    </p>
+                                    <p>
+                                        <b>Sistemas centralizados: </b> En estos sistemas hay un servidor que mantiene el repositorio y en el que cada programador mantiene en local únicamente aquellos archivos con los que está trabajando en un momento
+                                        dado. Yo necesito conectarme con el servidor donde está el código para poder trabajar y enviar cambios en el software que se está programando. Ese sistema centralizado es el único lugar donde está todo el código
+                                        del proyecto de manera completa. Subversion o CVS son sistemas de control de versiones centralizados.
+                                    </p>
+                                    <p>
+                                        <b>Sistemas distribuidos: </b> En este tipo de sistemas cada uno de los integrantes del equipo mantiene una copia local del repositorio completo. Al disponer de un repositorio local, puedo hacer commit (enviar cambios
+                                        al sistema de control de versiones) en local, sin necesidad de estar conectado a Internet o cualquier otra red. En cualquier momento y en cualquier sitio donde esté puedo hacer un commit. Es cierto que es local
+                                        de momento, luego podrás compartirlo con otras personas, pero el hecho de tener un repositorio completo me facilita ser autónomo y poder trabajar en cualquier situación. Git es un sistema de control de versiones
+                                        distribuido.
+                                    </p>
+                                    <p>
+                                        Tanto sistemas distribuidos como centralizados tienen ventajas e inconvenientes comparativas entre los unos y los otros. Para no hacer muy larga la introducción, cabe mencionar que los sistemas un poco más antiguos como CVS o también Subversion, por sus
+                                        características son un poco más lentos y pesados para la máquina que hace de servidor central. En los sistemas distribuidos no es necesario que exista un servidor central donde enviar los cambios, pero en caso de
+                                        existir se requiere menor capacidad de procesamiento y gestión, ya que muchas de las operaciones para la gestión de versiones se hacen en local.
+                                    </p>
+                                    <p>
+                                        Es cierto que los sistemas de control de versiones distribuidos están más optimizados, principalmente debido al ser sistemas concebidos hace menos tiempo, pero no todo son ventajas. Los sistemas centralizados permiten definir un número de versión en cada
+                                        una de las etapas de un proyecto, mientras que en los distribuidos cada repositorio local podría tener diferentes números de versión. También en los centralizados existe un mayor control del desarrollo por parte
+                                        del equipo.
+                                    </p>
+                                    <p>
+                                        De todos modos, en términos comparativos nos podemos quedar con la mayor ventaja de los sistemas distribuidos frente a los sistemas centralizados: La posibilidad de trabajar en cualquier momento y lugar, gracias a que siempre se mandan cambios al sistema
+                                        de versionado en local, permite la autonomía en el desarrollo de cada uno de los componentes del equipo y la posibilidad de continuar trabajando aunque el servidor central de versiones del software se haya caído.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 imagen">
+                                            <img src="imagen/git logo.png" width="20%" class="img-fluid" alt="Responsive image" style="margin-bottom: 15px !important;">
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Como ya hemos dicho, Git es un sistema de control de versiones distribuido. Git fue impulsado por Linus Torvalds y el equipo de desarrollo del Kernel de Linux. Ellos estaban usando otro sistema de control de versiones de código abierto, que ya por aquel
+                                        entonces era distribuido. Todo iba bien hasta que los gestores de aquel sistema de control de versiones lo convirtieron en un software propietario. Lógicamente, no era compatible estar construyendo un sistema de
+                                        código abierto, tan representativo como el núcleo de Linux, y estar pagando por usar un sistema de control de versiones propietario. Por ello, el mismo equipo de desarrollo del Kernel de Linux se tomó la tarea de
+                                        construir desde cero un sistema de versionado de software, también distribuido, que aportase lo mejor de los sistemas existentes hasta el momento.
+                                    </p>
+                                    <p>
+                                        Así nació Git, un sistema de control de versiones de código abierto, relativamente nuevo que nos ofrece las mejores características en la actualidad, pero sin perder la sencillez y que a partir de entonces no ha parado de crecer y de ser usado por más
+                                        desarrolladores en el mundo. A los programadores nos ha ayudado a ser más eficientes en nuestro trabajo, ya que ha universalizado las herramientas de control de versiones del software que hasta entonces no estaban
+                                        tan popularizadas y tan al alcance del común de los desarrolladores.
+                                    </p>
+                                    <p>
+                                        Git es multiplataforma, por lo que puedes usarlo y crear repositorios locales en todos los sistemas operativos más comunes, Windows, Linux o Mac. Existen multitud de GUIs (Graphical User Interface o Interfaz de Usuario Gráfica) para trabajar con Git a
+                                        golpe de ratón, no obstante para el aprendizaje se recomienda usarlo con línea de comandos, de modo que puedas dominar el sistema desde su base, en lugar de estar aprendiendo a usar un programa determinado.
+                                    </p>
+                                    <p>
+                                        Para usar Git debes instalarlo en tu sistema. Hay unas instrucciones distintas dependiendo de tu sistema operativo, pero en realidad es muy sencillo. La página oficial de descargas está en gitscm.com.
+                                    </p>
+                                    <p>
+                                        Allí encontrarás para descarga lo que se llama la "Git Bash" es decir, la interfaz de Git por línea de comandos. Tienes que descargar aquella versión adecuada para tu sistema (o si estás en Linux instalarla desde los repositorios dependiendo de tu distribución).
+                                        Aparte de Windows, Linux o Mac, también hay versión para Solaris. La instalación es muy sencilla, lo que resulta un poco más complejo al principio es el uso de Git. No obstante, en futuros artículos podremos ver
+                                        cuáles son los primeros pasos con Git y veremos que para realizar unas cuantas funciones básicas el manejo resulta bastante asequible para cualquier persona. Otra cosa es dominar Git, para lo cual te hará falta
+                                        más tiempo y esfuerzo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 imagen">
+                                            <img src="imagen/github logo.png" width="40%" class="img-fluid" alt="Responsive image">
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Como se ha dicho, Github github.com es un servicio para alojamiento de repositorios de software gestionados por el sistema de control de versiones Git. Por tanto, Git es algo más general que nos sirve para controlar el estado de un desarrollo a lo largo
+                                        del tiempo, mientras que Github es algo más particular: un sitio web que usa Git para ofrecer a la comunidad de desarrolladores repositorios de software. En definitiva, Github es un sitio web pensado para hacer
+                                        posible el compartir el código de una manera más fácil y al mismo tiempo darle popularidad a la herramienta de control de versiones en sí, que es Git.
+                                    </p>
+                                    <p>
+                                        Cabe destacar que Github es un proyecto comercial, a diferencia de la herramienta Git que es un proyecto de código abierto. No es el único sitio en Internet que mantiene ese modelo de negocio, pues existen otros sitios populares como Bitbucket que tienen
+                                        la misma fórmula. No obstante, aunque Github tenga inversores que inyectan capital y esté movido por la rentabilidad económica, en el fondo es una iniciativa que siempre ha perseguido (y conseguido) el objetivo
+                                        de hacer más popular el software libre. En ese sentido, en Github es gratuito alojar proyectos Open Source, lo que ha posibilitado que el número de proyectos no pare de crecer, y en estos momentos haya varios millones
+                                        de repositorios y usuarios trabajando con la herramienta.
+                                    </p>
+                                    <p>
+                                        Pero ojo, para no llevarnos a engaño, al ser Git un sistema de control de versiones distribuido, no necesito Github u otro sitio de alojamiento del código para usar Git. Simplemente con tener Git instalado en mi ordenador, tengo un sistema de control
+                                        de versiones completo, perfectamente funcional, para hacer todas las operaciones que necesito para el control de versiones. Claro que usar Github nos permite muchas facilidades, sobre todo a la hora de compartir
+                                        código fuente, incluso con personas de cualquier parte del mundo a las que ni conoces.
+                                    </p>
+                                    <p>
+                                        Quizás te estés preguntando ¿cómo obtienen dinero en Github si alojar proyectos en sus repositorios es gratis? Realmente solo es gratuito alojar proyectos públicos, de código abierto. El servicio también permite alojar proyectos privados y para ello hay
+                                        que pagar por una cuenta comercial o un plan de hosting que no es gratuito. Existen planes iniciales, para alojar hasta cinco proyectos privados a partir de 7 dólares por mes, lo que resulta bastante barato. Ese
+                                        mismo plan es gratuito para los estudiantes universitarios.
+                                    </p>
+                                    <p>
+                                        Github además se ha convertido en una herramienta para los reclutadores de empleados, que revisan nuestros repositorios de Github para saber en qué proyectos contribuimos y qué aportaciones hemos realizado. Por ello, hoy resulta importante para los programadores
+                                        no solo estar en Github sino además mantener un perfil activo.
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Israel Alcázar (2014-2020). Introducción a Git y Github. desarrolloweb. Recuperado de https://desarrolloweb.com/articulos/introduccion-git-github.html
+                            </p>
                         </div>
+                        <!---------------------  Lectura 3 HTML5  -------------------------->
                         <div class="tab-pane tabLectura fade" id="lectura3" role="tabpanel" aria-labelledby="lectura3-tab">
-                            Lectura 3
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>¿Qué es el HTML?</h4>
+                                    <p>
+                                        HTML es un lenguaje de marcación que sirve para definir el contenido de las páginas web. Se compone en base a etiquetas, también llamadas marcas o tags, con las cuales conseguimos expresar las partes de un documento, cabecera, cuerpo, encabezados, párrafos,
+                                        etc. En definitiva, el contenido de una página web.
+                                    </p>
+                                    <p>
+                                        HTML es el primer lenguaje que debe aprender cualquier persona interesada en construir un sitio web. A partir del HTML podemos pasar a muchos otros lenguajes interesantes que sirven para hacer cosas diversas y más avanzadas. Es decir, sea cual sea la
+                                        tecnología, herramienta o gestor de contenido que nos hayamos propuesto aprender, o que tengamos que usar en nuestro día a día, HTML siempre será el lenguaje en el que toda web se construye y, por tanto, es de obligado
+                                        conocimiento para todos.
+                                    </p>
+                                    <p>
+                                        Aprender HTML es sencillo. En pocos días o semanas serás capaz de entender y usar las etiquetas más comunes y componer documentos HTML (páginas web) correctas. Aquí encontrarás muchas ayudas para poder dar esos primeros pasos y luego profundizar en cualquier
+                                        área que necesites.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Con HTML se expresa el contenido</h4>
+                                    <p>
+                                        A la hora de aprender HTML es importante observar que sirve para expresar el contenido (el qué) y nunca la presentación (el cómo). Es decir, con HTML podemos colocar párrafos, listas, secciones, enlaces, imágenes, todo aquello que forma parte del contenido
+                                        que va a tener una página web.
+                                    </p>
+                                    <p>
+                                        Para definir la presentación se usa un lenguaje complementario, llamado CSS. Además, para definir la funcionalidad en el ámbito de la web se usa el lenguaje Javascript.
+                                    </p>
+                                    <p>
+                                        Sin embargo, esto no siempre ha sido así. En el momento de crearse el lenguaje HTML sí que existían etiquetas que permitían cambiar el estilo o presentación de la página, tales como
+                                        < font> que sirve para cambiar el color del texto o su tamaño. Todas estas etiquetas se han ido retirando del lenguaje a medida que se presentaban nuevas versiones, aunque por motivos de compatibilidad hacia atrás los navegadores
+                                            siguen soportándolas.
+                                    </p>
+                                    <p>
+                                        También existen atributos pensados para cambiar la forma como la que esa etiqueta se representa, como el atributo "align", que permite cosas como centrar el texto del contenido de un párrafo, por ejemplo. Sin embargo, aunque existan etiquetas o atributos
+                                        que sirvan para cambiar el formato o estilo de los elementos, no es una buena idea utilizarlos.
+                                    </p>
+                                    <p>
+                                        Gracias a la separación entre contenido y presentación, que conseguimos usando lenguajes separados para cada cosa, se obtienen múltiples beneficios. El más importante es que, para un mismo HTML podemos aplicar diversos tipos de presentación, solo cambiando
+                                        el código CSS. De este modo, si en algún momento se decide cambiar el estilo de una página, se puede hacer simplemente alterando su código CSS y sin necesidad de cambiar el HTML.
+                                    </p>
+                                    <p>
+                                        Se deduce también de aquí que, para desarrollar una página web, no solo se trata de aprender HTML, sino que será necesario también aprender CSS, un lenguaje imprescindible para poder aplicar el formato deseado a nuestro contenido.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Etiquetas</h4>
+                                    <p>
+                                        La etiqueta es el elemento básico del código HTML. Es un bloque de contenido que puede tener naturaleza diversa, desde un párrafo a una imagen o un vídeo, por ejemplo.
+                                    </p>
+                                    <p>
+                                        Las etiquetas se engloban entre signos menor y mayor que y tienen un inicio y un cierre. Dentro de estos signos mayor y menor que se coloca el nombre de la etiqueta. Por ejemplo:
+                                    </p>
+                                    <p class="code">
+                                        <code><b>&lt;</b><em>p</em><b>&gt;</b> Este es un parrafo <b>&lt;</b><em>/p</em><b>&gt;</b></code>
+                                    </p>
+                                    <p>
+                                        La anterior etiqueta &lt;p&gt; sirve para indicar el inicio de un párrafo. Dentro figura su contenido y finalmente tenemos la etiqueta de cierre del párrafo &lt;/&gt;>.
+                                    </p>
+                                    <p>
+                                        Muchas etiquetas tienen atributos para ajustar su comportamiento o definir alguna de sus propiedades. Por ejemplo, la etiqueta &lt;a&gt; para crear enlaces tiene el atributo href, donde se coloca la URL a la que va dirigido un enlace.
+                                    </p>
+                                    <p class="code">
+                                        <code><b>&lt;</b><em>a href="</em>https://alexanderr420.github.io/<em>"</em><b>&gt;</b> Enlace <b>&lt;</b><em>/a</em><b>&gt;</b></code>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Esqueleto de un documento HTML</h4>
+                                    <p>
+                                        Un documento HTML, una página web, contiene un árbol de etiquetas, que tiene una organización básica. La etiqueta raíz de un documento HTML es &lt;html&gt; y dentro tiene dos etiquetas principales:
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <b>&lt;head&gt; :</b> con la información de cabecera de la página. Es información que en principio no aparecerá en el cuerpo de la página, pero que sirve para saber de qué trata la página, cómo deben interpretarla
+                                                los distintos clientes web, etc.
+                                            </li>
+                                            <li>
+                                                <b>&lt;body&gt; :</b> que es la información del cuerpo, es decir, lo que se verá en el navegador cuando el usuario entre.
+                                            </li>
+                                        </ul>
+                                        Las etiquetas se engloban entre signos menor y mayor que y tienen un inicio y un cierre. Dentro de estos signos mayor y menor que se coloca el nombre de la etiqueta. Por ejemplo:
+                                    </p>
+                                    <p>
+                                        Además, hay algunas otras etiquetas básicas de control, como podemos ver en el siguiente esqueleto de documento HTML básico.
+                                    </p>
+
+                                    <pre class="code">
+    <code>
+    <em class="comentario">&lt;!DOCTYPE html&gt;</em>
+    <b>&lt;</b><em>html lang="</em>es<em>"</em><b>&gt;</b>
+    <b>&lt;</b><em>head</em><b>&gt;</b>
+        <b>&lt;</b><em>meta charset="</em>UTF-8<em>"</em><b>&gt;</b>
+        <b>&lt;</b><em>meta name="</em>viewport<em>" content="</em>width=device-width, initial-scale=1.0<em>"</em><b>&gt;</b>
+        <b>&lt;</b><em>meta http-equiv="</em>X-UA-Compatible<em>" content="</em>ie=edge<em></em>"</em><b>&gt;</b>
+        <b>&lt;</b><em>title<b>&gt;</b></em>Título del documento HTML<b>&lt;</b><em>/title</em><b>&gt;</b>
+    <b>&lt;</b><em>/head</em><b>&gt;</b>
+    <b>&lt;</b><em>body</em><b>&gt;</b>
+
+    <b>&lt;</b><em>/body</em><b>&gt;</b>
+    <b>&lt;</b><em>/html</em><b>&gt;</b>
+    </code>
+    </pre>
+
+                                    <p>
+                                        La primera etiqueta (DOCTYPE) indica el tipo de documento. Esta etiqueta debe estar siempre al principio. Fue definido y simplificado así desde HTML 5, ya que antes el doctype se expresaba con una etiqueta mucho mayor.
+                                    </p>
+                                    <p>
+                                        Posteriormente tenemos la etiqueta &lt;html&gt;, con el atributo "lang" opcional. En este caso hemos indicado que el idioma es español.
+                                    </p>
+                                    <p>
+                                        Luego encontramos el &lt;head&gt;, que tiene varias etiquetas. Las importantes son:
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                charset, siendo UTF-8 el recomendado. Lógicamente es importante que ese juego de caracteres se esté usando realmente al guardar el archivo con el código .html. Si usamos algún editor orientado a programadores seguramente se guarde con UTF-8 o al menos
+                                                tengas la opción de escoger este juego de carácteres.
+                                            </li>
+                                            <li>
+                                                Title, que es lo que mostrará el navegador en la pestaña donde se muestre esta página. También es muy importante para que Google y otros motores identifiquen bien el contenido.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Hay otras etiquetas en el &lt;head&gt; que son realmente aconsejables. El caso más claro es el del viewport. También es el lugar correcto para importar estilos CSS, por ejemplo.
+                                    </p>
+                                    <p>
+                                        Para acabar, el &lt;body&gt; contendrá la mayor parte de las etiquetas, con todo el marcado necesario para definir el contenido completo que se verá en la página.
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Israel Alcázar (2016-2020). Todo sobre HTML, Hypertext Markup Language o el lenguaje de marcas hipertexto. desarrolloweb. Recuperado de https://desarrolloweb.com/home/html
+                            </p>
                         </div>
+                        <!---------------------  Lectura 4 CSS3  -------------------------->
                         <div class="tab-pane tabLectura fade" id="lectura4" role="tabpanel" aria-labelledby="lectura4-tab">
-                            Lectura 4
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>¿Qué es el CSS?</h4>
+                                    <p>
+                                        CSS es el segundo lenguaje más básico y esencial para crear páginas web. El primero sería HTML, con el que se define el contenido de la página. El segundo CSS, con el que se define la parte de la presentación, es decir, cómo deben mostrarse los elementos
+                                        de la página, su posición, forma, espaciados, colores y en resumen, toda la parte estética.
+                                    </p>
+                                    <p>
+                                        CSS es un lenguaje que consiste en una serie de elementos mediante los cuales se declaran los estilos, básicamente éstos son los más importantes:
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <b>Selectores</b>, mediante los cuales podemos especificar qué elementos de la página nos estamos refiriendo
+                                            </li>
+                                            <li>
+                                                <b>Atributos</b> de estilo para definir qué cosas queremos estilizar sobre los selectores indicados
+                                            </li>
+                                            <li>
+                                                Una serie de <b>valores</b>, que indican qué estilo se debe aplicar a cada atributo sobre cada selector. Los valores se expresan con <b>unidades CSS</b>, que sirven para cuantificar los valores (píxeles,
+                                                puntos...)
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Aprender CSS no es difícil, pero cuando se usa profesionalmente se deben tener en cuenta muchos detalles y buenas prácticas, como la organización del código, la reutilización, la optimización, etc. que básicamente están tratados en los manuales y artículos
+                                        que encontrarás en DesarrolloWeb.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Separar el código CSS del código HTML</h4>
+                                    <p>
+                                        El enfoque de CSS es servir para definir la capa de presentación, es decir, la parte relacionada con el aspecto. Es algo que cualquier estudiante suele tener claro cuando está aprendiendo CSS, ya que al enseñar HTML probablemente se haya insistido, pero
+                                        que siempre conviene reforzar.
+                                    </p>
+                                    <p>
+                                        En el código HTML colocamos el contenido, es decir, qué debe visualizarse, mientras que con CSS definimos la presentación, es decir, cómo debe visualizarse. Esto nos lleva a una serie de usos de CSS que debemos de respetar como buenas prácticas.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Lo adecuado cuando trabajamos con CSS es escribir el código en ficheros independientes, que tendrán extensión .css. Cada cosa en su lugar!
+                                            </li>
+                                            <li>
+                                                No conviene colocar código CSS por tanto dentro de archivos HTML. Debemos evitar colocar estilos en etiquetas &lt;style&gt; dentro del propio código HTML.
+                                            </li>
+                                            <li>
+                                                Por supuesto, mucho menos aconsejable es colocar estilos en los atributos "style" de las etiquetas HTML.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Evolución del lenguaje CSS</h4>
+                                    <p>
+                                        Las hojas de estilo en cascada llegaron al mundo de la web bastante más tarde que el lenguaje HTML. Aunque fue propuesto en 1994 el primer estándar no llegaría hasta prácticamente entrado 1997. Sería CSS 1.
+                                    </p>
+                                    <p>
+                                        Obviamente, CSS 1 supuso un gran avance para el mundo del desarrollo de páginas web, pero lo cierto es que para entonces los diseñadores se habían acostumbrado a mezclar el contenido con la presentación, por medio del uso de etiquetas HTML que estaban
+                                        presentes y seguían funcionando en los navegadores. Además CSS 1 había sido presentado con bastantes carencias, lo que hizo que se tuviera que presentar un nuevo estándar rápidamente. Así fue como sería liberado
+                                        como recomendación CSS 2 pasado apenas un año, en 1998.
+                                    </p>
+                                    <p>
+                                        A partir de este punto el mundo de los estándares abiertos para la web tuvo un parón generalizado. No solo CSS, sino HTML y otros lenguajes como Javascript. CSS 2 tuvo una revisión publicada como CSS 2.1 en la que añadieron algunos selectores nuevos,
+                                        pero pasaron años antes de la presentación de una nueva versión. Con todo entramos en una etapa oscura en la que CSS no llegó a cubrir totalmente sus objetivos.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                La compatibilidad de CSS no era la misma en todos los navegadores
+                                            </li>
+                                            <li>
+                                                Los navegadores se dedicaban a incorporar funcionalidades por medio de prefijos, que hacían más difícil y tedioso escribir el CSS.
+                                            </li>
+                                            <li>
+                                                El estándar no cubria todas las necesidades de los diseñadores
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Con todo, los diseñadores y desarrolladores web tenían que usar los famosos "hacks de CSS", que no eran más que artimañas para conseguir los resultados deseados de maneras poco ortodoxas, que acababan en un código complejo y muy orientado a atender necesidades
+                                        de navegadores determinados. Por poner un par de ejemplos, se tenía que usar capas anidadas a varios niveles para conseguir cosas como los bordes redondeados, Javascript para conseguir tamaños de fuentes adaptables,
+                                        imágenes con transparencia en canal alfa (PNG) para conseguir sombras, etc. Al final conseguir un diseño medianamente atractivo y homogéneo a lo largo de los navegadores solo con CSS era muy complicado y se tenía
+                                        que continuar variando el HTML o el Javascript para solucionar sus carencias.
+                                    </p>
+                                    <p>
+                                        La aparición de CSS 3 sólo se materializó en el año 2014 con el movimiento de HTML 5. Vendría a aportar soluciones a la mayoría de las necesidades de los diseñadores y a permitir finalmente cubrir el objetivo principal del lenguaje, la separación del
+                                        contenido de la presentación. No obstante cabe decir que CSS 3 se presentó por medio de un nutrido grupo de especificaciones, que han ido mejorándose e incrementándose hasta la fecha, por lo que no es tanto un lanzamiento
+                                        puntual, sino una continua mejora del estándar a diversos niveles.
+                                    </p>
+                                    <p>
+                                        Hoy podemos decir que CSS cubre las necesidades de los diseñadores, más aún después de la aparición de CSS Flexbox, que permite agregar una facilidad enorme a la hora de colocar los elementos en la página. Junto por supuesto del último aporte a las especificaciones
+                                        de CSS Grid System, que por fin ha aportado un completo y versátil sistema de rejilla a la web, mediante el cual los diseñadores web disponen de herramientas verdaderamente potentes para posicionar los elementos
+                                        en la página, de manera independiente a como estos aparezcan en el código HTML.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Preprocesadores CSS</h4>
+                                    <p>
+                                        Los preprocesadores son herramientas indispensables para el desarrollo frontend actual. Permiten desarrollar CSS de una manera más ágil pero sobretodo crear un código más mantenible.
+                                    </p>
+                                    <p>
+                                        Para ello los preprocesadores extienden las características del lenguaje CSS, permitiendo uso de variables, funciones (mixins) diversas otras formas de acortar la escritura del código.
+                                    </p>
+                                    <p>
+                                        Los preprocesadores no se ejecutan en el entorno del navegador. En lugar de ello se procesan, compilando su código en código CSS estándar que si es capaz de entenderlo cualquier navegador. En ese proceso de compilación a menudo se incluye además una serie
+                                        de mejoras en el código CSS como la minimización.
+                                    </p>
+                                    <p>
+                                        los preprocesadores más comunes son Less y >Sass. Siendo Sass el más extendido en la comunidad frontend con diferencia.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Selectores CSS</h4>
+                                    <p>
+                                        Los selectores en CSS nos permiten acceder a cualquier elemento o grupo de elementos, para aplicar estilos sobre el/ellos en una única declaración. Como su nombre indica, permiten seleccionar aquellos elementos sobre los que se van a aplicar las reglas
+                                        de estilo.
+                                    </p>
+                                    <p>
+                                        Dentro del código CSS podemos usar selectores y aplicarles un conjunto de estilos determinado. Para ello escribimos el selector y colocamos los atributos de estilos encerrados entre llaves:
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>selector</em> <b>{</b>
+        color: red;
+        width: auto;
+    <b>}</b></code>
+                                    </pre>
+                                    <p>
+                                        Existen selectores de lo más variado, que permiten ajustar de una manera.muy precisa qué elementos se desea seleccionar. Los más importantes son los siguientes:
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <b>Etiqueta: </b> sirven para seleccionar todos los elementos de una misma etiqueta o tag HTML.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>h1</em> <b>{</b>
+        font-size: 26px;
+    <b>}</b>
+</code></pre>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <b>Clase: </b> selecciona todos los elementos de una clase determinada. (Class de CSS).
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>.destacado</em> <b>{</b>
+        font-weight: bold;
+        color: orange;	
+    <b>}</b>
+</code></pre>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <b>Identificador: </b> permiten seleccionar etiquetas individuales por el atributo Id de la etiqueta.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>#fomularioAlta</em> <b>{</b>
+        border: 1px solid #99c; 
+    <b>}</b>
+</code></pre>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <b>Atributo: </b> permiten seleccionar todas las etiquetas que tengan un atributo dado, o bien un atributo con un valor determinado.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <pre class="code">
+<code>
+    [<em>title</em>] <b>{</b>
+        text-decoration: none;
+    <b>}</b>
+      
+    [<em>align="</em>center<em>"</em>]</em> <b>{</b>
+        border: 1px solid red;
+    <b>}</b>
+</code></pre>
+                                    <p>
+                                        Además, los selectores se pueden combinar entre sí para conseguir selectores mucho más precisos:
+                                    </p>
+                                    <p>
+                                        Estos selectores obtienen las imágenes que tengan el atributo alt y los párrafos que tengan la clase "desactivado".
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>img</em>[<em>alt</em>] <b>{</b>
+        border: none;
+    <b>}</b>
+    
+    <em>p.desactivado</em> <b>{</b>
+        color: #ddd;
+    <b>}</b>
+</code></pre>
+                                    <p>
+                                        También podemos relacionar los selectores con un espacio y entonces el significado cambia totalmente, ya que se estaría indicando que un elemento tiene que estar dentro de otro.
+                                    </p>
+                                    <p>
+                                        Este selector aplicaría estilos a todos los elementos &lt;h2&gt; que estén dentro de contenedores que tienen la clase "nota".
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>.nota h2</em> <b>{</b>
+        font-weight: normal;
+    <b>}</b>
+</code></pre>
+
+                                    <p>
+                                        También podemos combinar los selectores de CSS usando una coma. Entonces estamos indicando que los atributos de estilo deben aplicarse a los dos selectores por separado.
+                                    </p>
+                                    <p>
+                                        Así estaríamos indicando que queremos aplicar estilos sobre todos los párrafos y todas las divisiones con la clase "bloque".
+                                    </p>
+                                    <pre class="code">
+<code>
+    <em>p, div.bloque</em> <b>{</b>
+        margin-bottom: 25px;  
+    <b>}</b>
+</code></pre>
+                                </div>
+                            </div>
+                            <p>
+                                Israel Alcázar (2016-2020). Todo sobre CSS, Categoría de CSS, con todo lo que necesitas para aprender las Hojas de Estilo en Cascada. Manuales, talleres, maquetación css, preguntas y respuestas y mucho más. desarrolloweb. Recuperado de https://desarrolloweb.com/home/css
+                            </p>
+
                         </div>
+
+                        <!---------------------  Lectura 5 Bootstrap  -------------------------->
                         <div class="tab-pane tabLectura fade" id="lectura5" role="tabpanel" aria-labelledby="lectura5-tab">
                             Lectura 5
                         </div>

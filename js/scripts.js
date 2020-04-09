@@ -10,8 +10,8 @@ $(document).ready(function() {
         $(".contenido").hide();
         $("#divInicio").show();
 
-        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
-        $("#inicio").removeClass("nav-link").addClass("nav-link active");
+        /*$(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#inicio").removeClass("nav-link").addClass("nav-link active");*/
 
     });
 
@@ -20,8 +20,8 @@ $(document).ready(function() {
         $(".contenido").hide();
         $("#divLecturas").show();
 
-        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
-        $("#lecturas").removeClass("nav-link").addClass("nav-link active");
+        /*$(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#lecturas").removeClass("nav-link").addClass("nav-link active");*/
 
     });
 
@@ -30,8 +30,8 @@ $(document).ready(function() {
         $(".contenido").hide();
         $("#divMultimediaGit").show();
 
-        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
-        $("#multimedia").removeClass("nav-link").addClass("nav-link active");
+        /*$(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#multimedia").removeClass("nav-link").addClass("nav-link active");*/
 
     });
 
@@ -40,8 +40,8 @@ $(document).ready(function() {
         $(".contenido").hide();
         $("#divMultimediaApoyo").show();
 
-        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
-        $("#multimedia").removeClass("nav-link").addClass("nav-link active");
+        /*$(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#multimedia").removeClass("nav-link").addClass("nav-link active");*/
 
     });
 
@@ -50,8 +50,8 @@ $(document).ready(function() {
         $(".contenido").hide();
         $("#divActividades").show();
 
-        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
-        $("#actividades").removeClass("nav-link").addClass("nav-link active");
+        /*$(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#actividades").removeClass("nav-link").addClass("nav-link active");*/
 
     });
 
@@ -60,8 +60,8 @@ $(document).ready(function() {
         $(".contenido").hide();
         $("#divAutores").show();
 
-        $(".nav-link").removeClass("nav-link active").addClass("nav-link");
-        $("#autores").removeClass("nav-link").addClass("nav-link active");
+        /*$(".nav-link").removeClass("nav-link active").addClass("nav-link");
+        $("#autores").removeClass("nav-link").addClass("nav-link active");*/
 
     });
 });
